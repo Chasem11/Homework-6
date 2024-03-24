@@ -2,7 +2,10 @@
 
 Submitted by: **Chase Moffat**
 
-This web app: 
+This web app: My project is a dashboard that displays all of the first generation Pokemon. My project makes a call to the Pokemon API and displays cards that show the Pokemons
+name, type, and stats. The cards are displayed by passing the API data to a Pokemon component that formats the data into a readable card. My project also has search functionality.
+Users can directly search for a specific Pokemon by typing their name into the search bar. Users can also filter through Pokemon by type or HP. My project also displays summary
+stats. These stats show the total Pokemon, average base experiance, median HP, and most common type for the Pokemon that are currently displayed on the dashboard.
 
 Time spent: **4** hours spent in total
 
@@ -31,7 +34,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+![Video Walkthrough](https://github.com/COP4808-Spring2024-Full-Stack-Webdev/hw5-Chasem11/blob/main/src/assets/project5.gif)
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with ...  
