@@ -9,6 +9,7 @@ function App() {
   const [typeFilter, setTypeFilter] = useState('');
   const [hpFilter, setHpFilter] = useState(0);
 
+  //API Fetch
   useEffect(() => {
     const fetchFirstGenPokemon = async () => {
       try {
@@ -29,6 +30,7 @@ function App() {
     fetchFirstGenPokemon();
   }, []);
 
+  //Filter Functions
   useEffect(() => {
     let results = pokemonList;
 
@@ -65,6 +67,7 @@ function App() {
     setHpFilter(Number(event.target.value));
   };
 
+  //Stat Functions
   const totalPokemon = filteredResults.length;
   const averageBaseExp = filteredResults.reduce((sum, pokemon) => sum + pokemon.base_experience, 0) / totalPokemon || 0;
   const typeOccurrences = filteredResults.flatMap(pokemon => pokemon.types.map(type => type.type.name));
@@ -94,6 +97,7 @@ function App() {
   return (
     <div className="App">
       <h1>Pokémon Dashboard</h1>
+
       <div className="search-filter-container">
         <input
           type="text"
@@ -141,11 +145,13 @@ function App() {
           <p>Most Common Type: {mostCommonType}</p>
         </div>
       </div>
+
       <ul>
         {filteredResults.map(pokemon => (
           <Pokemon key={pokemon.id} data={pokemon} />
         ))}
       </ul>
+      
     </div>
   );
 }
