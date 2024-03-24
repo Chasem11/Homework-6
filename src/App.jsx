@@ -73,6 +73,24 @@ function App() {
     typeOccurrences.filter(type => type === b).length
   ).pop();
 
+  const calculateMedian = (values) => {
+    if (values.length === 0) return 0;
+    values.sort((a, b) => a - b);
+    const half = Math.floor(values.length / 2);
+    
+    if (values.length % 2)
+      return values[half];
+  
+    return (values[half - 1] + values[half]) / 2.0;
+  };
+  
+  const hpValues = filteredResults.map(pokemon => 
+    pokemon.stats.find(stat => stat.stat.name === 'hp').base_stat
+  );
+
+  const medianHp = calculateMedian(hpValues);
+  
+
   return (
     <div className="App">
       <h1>Pokémon Dashboard</h1>
@@ -115,6 +133,9 @@ function App() {
         </div>
         <div className="stat-card">
           <p>Average Base Experience: {averageBaseExp.toFixed(2)}</p>
+        </div>
+        <div className="stat-card">
+          <p>Median HP: {medianHp}</p>
         </div>
         <div className="stat-card">
           <p>Most Common Type: {mostCommonType}</p>
