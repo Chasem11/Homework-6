@@ -12,13 +12,6 @@ const Pokemon = ({ data }) => {
           </span>
         ))}
       </div>
-      <div className="pokemon-stats">
-        {data.stats.map(statInfo => (
-          <div key={statInfo.stat.name} className="pokemon-stat">
-            {statInfo.stat.name}: {statInfo.base_stat}
-          </div>
-        ))}
-      </div>
     </div>
   );
 };

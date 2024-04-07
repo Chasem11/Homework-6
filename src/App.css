@@ -28,6 +28,7 @@ ul {
   list-style: none;
 }
 
+
 .pokemon-card {
   background: #ffffff;
   border-radius: 8px;
@@ -252,6 +253,7 @@ ul {
   outline: none; 
   border-color: #61dafb; 
 }
+
 
 @media (max-width: 1024px) {
   ul {
