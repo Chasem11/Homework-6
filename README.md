@@ -32,7 +32,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+![Video Walkthrough](https://github.com/COP4808-Spring2024-Full-Stack-Webdev/hw6-Chasem11/blob/main/src/assets/project6.gif)
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with ...  
