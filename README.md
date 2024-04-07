@@ -1,30 +1,28 @@
-# Web Development Project 5 - *Pokemon Dashboard*
+# Web Development Project 6 - *Pokemon Dashboard*
 
 Submitted by: **Chase Moffat**
 
 This web app: My project is a dashboard that displays all of the first generation Pokemon. My project makes a call to the Pokemon API and displays cards that show the Pokemons
-name, type, and stats. The cards are displayed by passing the API data to a Pokemon component that formats the data into a readable card. My project also has search functionality.
-Users can directly search for a specific Pokemon by typing their name into the search bar. Users can also filter through Pokemon by type or HP. My project also displays summary
-stats. These stats show the total Pokemon, average base experiance, median HP, and most common type for the Pokemon that are currently displayed on the dashboard.
+name, imagen and type. When the user clicks on the pokemons name they are redirected to a new page to view the pokemons card. On the unique pokemon page users can view the pokemons
+HP, stats, and type. On the main page of my porject there is a donut chart. This chart shows the distribution of pokemon types as a way to visuilize which types are  most common. 
+My project also has search functionality. Users can directly search for a specific Pokemon by typing their name into the search bar. Users can also filter through Pokemon by type 
+or HP. My project also displays summary stats. These stats show the total Pokemon, average base experiance, median HP, and most common type for the Pokemon that are currently displayed on the dashboard.
 
-Time spent: **4** hours spent in total
+Time spent: **4.5** hours spent in total
 
 ## Required Features
 
 The following **required** functionality is completed:
 
-- [x] **The list displays a list of data fetched using an API call**
-- [x] **Data uses the useEffect React hook and async/await syntax**
-- [x] **The app dashboard includes at least three summary statistics about the data such as**
-  - [x] *Total Pokemon, Average Base Experiance, Median HP, and Most Common Type*
-- [x] **A search bar allows the user to search for an item in the fetched data**
-- [x] **Multiple different filters (2+) allow the user to filter items in the database by specified categories**
+- [x] **The app includes at least one unique chart developed using the fetched data that tell an interesting story**
+- [x] **Clicking on an item in the list view displays more details about it**
+- [x] **Clicking on an item has a direct, unique link to that item's detail view page**
+
 
 The following **optional** features are implemented:
 
-- [x] Multiple filters can be applied simultaneously
-- [ ] Filters use different input types such as a text input, a selection, or a slider
-- [ ] The user can enter specific bounds for filter values
+- [ ] The site's customized dashboard contains more content that explains what is interesting about the data
+- [ ] The site allows users to toggle between different data visualizations
 
 The following **additional** features are implemented:
 
@@ -34,7 +32,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-![Video Walkthrough](https://github.com/COP4808-Spring2024-Full-Stack-Webdev/hw5-Chasem11/blob/main/src/assets/project5.gif)
+<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with ...  
